@@ -12,22 +12,22 @@ TO COMPILE:
 
 CHANGES: 
 
-1. std::string const NTUPLEMAKER_NAME = “ntuplemaker_H2DiMuonMaker”; 
-   --> std::string const NTUPLEMAKER_NAME = “”; 
-2. TH1D *h = new TH1D(“pileup”, “pileup”, 50, 0, 50);	 
-   --> TH1D *h = new TH1D(“pileup”, “pileup”, 50, 0, 50); 
-3. SET_BRANCH_BOOL_ARRAY(Muon_isGlobal); 
-   --> // SET_BRNACH_BOOL_ARRAY(Muon_isGlobal); 
-4. SET_BRANCH_UCHAR_ARRAY(Muon_miniIsoId); 
-   --> // SET_BRANCH_UCHAR_ARRAY(Muon_miniIsoId); 
-5. mu._isGlobal = Muon_isGlobal[i] 
-   --> // mu._isGlobal = Muon_isGlobal[i] 
-6. Comment out “streamer._chain->SetBranchAddress...”  
-7. if (!(aux->hasHLTFired[0] || aux->_hasHLTFired[1]))  
-   continue; 
-   --> // if (!(aux->hasHLTFired[0] || aux->_hasHLTFired[1])) 		 
-       // continue; 
-8. if (!passMuons(muons1.at(im), muons2.at(im))) 
-   continue; 
-   --> // if (!passMuons(muons1.at(im), muons2.at(im))) 
-       // continue; 
+1. std::string const NTUPLEMAKER_NAME = “ntuplemaker_H2DiMuonMaker”;\
+   --> std::string const NTUPLEMAKER_NAME = “”;
+2. TH1D *h = new TH1D(“pileup”, “pileup”, 50, 0, 50);\
+   --> TH1D *h = new TH1D(“pileup”, “pileup”, 50, 0, 50);
+3. SET_BRANCH_BOOL_ARRAY(Muon_isGlobal);\
+   --> // SET_BRNACH_BOOL_ARRAY(Muon_isGlobal);
+4. SET_BRANCH_UCHAR_ARRAY(Muon_miniIsoId);\
+   --> // SET_BRANCH_UCHAR_ARRAY(Muon_miniIsoId);
+5. mu._isGlobal = Muon_isGlobal[i]
+   --> // mu._isGlobal = Muon_isGlobal[i]
+6. Comment out “streamer._chain->SetBranchAddress...”
+7. if (!(aux->hasHLTFired[0] || aux->_hasHLTFired[1]))
+   continue;
+   --> // if (!(aux->hasHLTFired[0] || aux->_hasHLTFired[1]))
+       // continue;
+8. if (!passMuons(muons1.at(im), muons2.at(im)))
+   continue;
+   --> // if (!passMuons(muons1.at(im), muons2.at(im)))
+       // continue;
