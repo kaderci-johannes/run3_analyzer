@@ -20,14 +20,14 @@ CHANGES:
    --> // SET_BRNACH_BOOL_ARRAY(Muon_isGlobal);
 4. SET_BRANCH_UCHAR_ARRAY(Muon_miniIsoId);\
    --> // SET_BRANCH_UCHAR_ARRAY(Muon_miniIsoId);
-5. mu._isGlobal = Muon_isGlobal[i]
+5. mu._isGlobal = Muon_isGlobal[i]\
    --> // mu._isGlobal = Muon_isGlobal[i]
 6. Comment out “streamer._chain->SetBranchAddress...”
-7. if (!(aux->hasHLTFired[0] || aux->_hasHLTFired[1]))
-   continue;
-   --> // if (!(aux->hasHLTFired[0] || aux->_hasHLTFired[1]))
+7. if (!(aux->hasHLTFired[0] || aux->_hasHLTFired[1]))\
+   continue;\
+   --> // if (!(aux->hasHLTFired[0] || aux->_hasHLTFired[1]))\
        // continue;
-8. if (!passMuons(muons1.at(im), muons2.at(im)))
-   continue;
-   --> // if (!passMuons(muons1.at(im), muons2.at(im)))
+8. if (!passMuons(muons1.at(im), muons2.at(im)))\
+   continue;\
+   --> // if (!passMuons(muons1.at(im), muons2.at(im)))\
        // continue;
