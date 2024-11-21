@@ -3,8 +3,9 @@
 TO INSTALL:
 
 Clone the repository to your space:\
-    git clone https://github.com/kaderci-johannes/run3_analyzer.git\
-\
+
+    git clone https://github.com/kaderci-johannes/run3_analyzer.git
+
 Create and go into build folder:\
     cd run3_analyzeru&& mkdir build && cd build\
 \
