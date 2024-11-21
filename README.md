@@ -3,13 +3,17 @@
 TO INSTALL:
 
 Clone the repository to your space:\
-`git clone git@github.com:kaderci-johannes/run3_analyzer.git`\\
+`git clone https://github.com/kaderci-johannes/run3_analyzer.git`\
+\
 Create and go into build folder:\
-`cd run3_analyzeru&& mkdir build && cd build`\\
+`cd run3_analyzeru&& mkdir build && cd build`\
+\
 Configure the code:\
-`cmake -DCMAKE_PREFIX_PATH="/cvmfs/sft.cern.ch/lcg/app/releases/ROOT/6.28.10/x86_64-centos8-gcc85-opt;/cvmfs/sft.cern.ch/lcg/releases/LCG_103/Boost/1.81.0/x86_64-centos9-gcc11-opt/" ..`\\
+`cmake -DCMAKE_PREFIX_PATH="/cvmfs/sft.cern.ch/lcg/app/releases/ROOT/6.28.10/x86_64-centos8-gcc85-opt;/cvmfs/sft.cern.ch/lcg/releases/LCG_103/Boost/1.81.0/x86_64-centos9-gcc11-opt/" ..`\
+\
 Compile:\
-`make`\\
+`make`\
+\
 REMINDER - If any edits are made into the C++ files, you must “make” once more.
 
 
