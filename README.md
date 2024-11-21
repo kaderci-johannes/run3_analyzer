@@ -16,7 +16,7 @@ Compile:\
 \
 REMINDER - If any edits are made into the C++ files, you must “make” once more.
 
-
+\
 CHANGES:
 
 1. std::string const NTUPLEMAKER_NAME = “ntuplemaker_H2DiMuonMaker”;\
@@ -38,3 +38,41 @@ CHANGES:
    continue;\
    --> // if (!passMuons(muons1.at(im), muons2.at(im)))\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// continue;
+
+\
+-- will be edited from here --
+TO RUN:  
+
+(LOCATION) 
+
+    cd /afs/cern.ch/user/d/dblend/test-analysis/build/src/drivers 
+
+ 
+
+(TEST FILE) 
+
+(HELP OPTIONS) 
+
+    ./process_nanoaod_2024_quick_test –help 
+
+ 
+
+(EXAMPLE) 
+
+    ./process_nanoaod_2024_quick_test --root-file /eos/user/d/dblend/Smashing_Physics/8AE6D24A-148A-1E4C-A948-4ECF4C03732E.root  
+
+ 
+
+(HIGGS ANALYZER) 
+
+ 
+
+(EXAMPLE) 
+
+    Full Version 
+
+    ./process_HiggsAnalysis_wCutsExtended_NoPairing_v0 --input test.list --output output.root --isMC yes --genPUMC true --puMC myMCPUfile.root --puDATA PileupHistogram-goldenJSON-13tev-2017-69200ub-99bins.root 
+
+    Simple Version without pileup 
+
+    ./process_HiggsAnalysis_wCutsExtended_NoPairing_v0 --input test.list --output output.root --isMC false
